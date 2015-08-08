@@ -9,7 +9,6 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -25,50 +24,155 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <header>
+       <div class="topo">
+          <div class="row">
+          <div class="col-md-9">
+               <div class="input-group">
+                  <input type="text" class="form-control" placeholder="search">
+                  <span class="input-group-addon">GO</span>
+               </div> <!-- input-group -->
+                <ul>
+                   <li>
+                     <a href="#">login</a>
+                  </li>
+                   <li>
+                     <a href="#">checkout</a>
+                  </li>
+                   <li>
+                     <a href="#">chart (0)</a>
+                  </li>
+                </ul>
+            </div> <!-- col-md-9 -->
+          </div> <!-- row -->
+       </div> <!-- topo -->
+       <nav>
+       <a href="#" class="nav-brand">
+          <img src="images/logo.png" alt="tomo logo">
+       </a>
+          <ul>
+             <li>
+               <a href="#">HOME</a>
+            </li>
+             <li>
+               <a href="#">SHOP</a>
+            </li>
+             <li>
+               <a href="#">LOOKBOOK</a>
+            </li>
+             <li>
+               <a href="#">BLOG</a>
+            </li>
+          </ul>
+       </nav>
+    </header>
+    <main>
+       <div class="container-fluid">
+         <div class="row">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+             <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+              </ol>
 
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">Tomo</h3>
+               <!-- Wrapper for slides -->
+               <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                     <img class="fullscreen" src="images/banner.png" alt="special price">
+                      <div class="carousel-caption">
+                         <p>Get special price </p>
+                         <p>ON every MOnth.</p>
+                         <p>Kami membuat program diskon tiap bulannyahingga 30% khusus bagi pelanggan kami yang mempunyai kartu member.</p>
+                     <button class="btn btn-danger">Biki Kartu Member</button>
+                     </div>
+                  </div> <!-- item-1 -->
+                  <div class="item">
+                     <img class="fullscreen" src="images/banner2.png" alt="girl with a camera">
+                  </div> <!-- item-2 -->
+               </div>
+               <a href="#carousel" class="left carousel-control" data-slide="prev">
+                  <span class="carousel-esquerda"></span>
+               </a>
+               <a href="#carousel" class="right carousel-control" data-slide="prev">
+                  <span class="carousel-direita"></span>
+               </a>
+            </div>
+         </div>
+       </div>
+       <div class="container-fluid">
+         <h3 class="text-center">NEW RELEASED</h3>
+         <div class="row">
+            <div class="col-md-2 col-md-offset-3">
+              <img class="img-responsive" src="images/jaqueta.png" alt="jaqueta">
+            </div>
+            <div class="col-md-2">
+              <img class="img-responsive" src="images/adidas-tenis.png" alt="adidas tenis">
+            </div>
+            <div class="col-md-2">
+              <img class="img-responsive" src="images/blusa.png" alt="blusa preta supreme">
+            </div>
+         </div> <!-- row -->
+       <div class="row"></div>
+         <div class="col-md-2 col-md-offset-3">
+            <img class="img-responsive" src="images/mochila.png" alt="camo blue argh inpire">
+         </div>
+         <div class="col-md-2">
+            <img class="img-responsive" src="images/blusa_de_botao.png" alt="short shirt argh inpire">
+         </div>
+         <div class="col-md-2">
+            <img class="img-responsive" src="images/tenisN.png" alt="NB 1300">
+         </div>
+       </div>
+
+      <a class="view__more" href="#">VIEW MOREW</a>
+
+      <div class="row">
+         <div class="col-md-5 col-md-offset-1">
+            <img src="images/twitter.png" alt="twitter">
+         </div>
+         <div class="col-md-5">
+            <img src="images/instagram.png" alt="instagram">
+         </div>
       </div>
 
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
+      <div class="row">
+         <div class="col-md-5 col-md-offset-1">
+            <img src="images/contato.png" alt="contact">
+         </div>
+         <div class="col-md-5">
+            <img src="images/blog.png" alt="blog">
+         </div>
       </div>
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is a mature, stable, and powerful professional grade CSS extension language.</p>
-
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
-        </div>
+      <div class="container-fluid">
+         <div class="row">
+            <img src="images/supreme.png" alt="supreme">
+            <img src="images/adidas.png" alt="supreme">
+            <img src="images/brodo.png" alt="supreme">
+            <img src="images/topoDesign.png" alt="supreme">
+            <img src="images/nike.png" alt="supreme">
+            <img src="images/affairs.png" alt="supreme">
+         </div>
       </div>
 
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
-
-    </div>
-
+    </main>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
